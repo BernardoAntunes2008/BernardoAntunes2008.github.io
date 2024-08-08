@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(132, 165, 42);
+    background-image: url(Imagem_Do_Mapa.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+#arroz{
+    color: chartreuse;
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+}
+#oioi{
+    font-size: 2.4rem;
+    text-align: right;
+    font-family: 'Lucida Sans';
+    color:red;
+    padding: 15px ;
+    padding: rgb(58, 77, 59);
+    border:rgb(132, 165, 42);
+}
