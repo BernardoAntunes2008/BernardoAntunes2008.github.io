@@ -1,0 +1,21 @@
+header{
+    background-image: url(/img/banner.jpg);
+    text-align: center;
+    color: aliceblue;
+}
+body{
+    margin: 0px;
+}
+#uj a{
+    color: aliceblue;
+}
+.A{
+    display: flex;
+    flex-direction: row;
+}
+.A article{
+    width:65%;
+}
+.A aside{
+    width: 35%;
+}
