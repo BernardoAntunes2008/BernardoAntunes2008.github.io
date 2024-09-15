@@ -1,3 +1,4 @@
+
 * {
 	font-family: Tahoma, Verdana, sans-serif;
 }
@@ -16,7 +17,7 @@ header h1 {
 	font-size: 1.7em;
 	margin:0;
 }
- 
+
 header span {
 	color: rgb(0, 171, 230);
 }
@@ -163,12 +164,13 @@ section {
 	clear: left;
 	width: inherit;
 	box-sizing: border-box;
-	text-align: center;
+	
 	padding: 5px;
 }
 
 #nav-bottom li {
-	margin-left: 1rem;
 	display: inline;
 	list-style: none;
+    text-align: center;
+    margin: 0.7cm;
 }
