@@ -1,0 +1,48 @@
+body{
+    background-color: crimson;
+    background-image: url(.//img/Natal.png);
+    margin: 0;
+}
+div > img{
+    width: 200px;
+    position: relative;
+    text-align: right;
+}
+#Atumalaca{
+    display: flex;
+    flex-direction: row;
+}
+#Arroz{
+    margin-right: 550px;
+}
+#Farofa{
+    margin-right: 550px;
+}
+#Beterraba{
+    text-align: center;
+    background-color: rgb(255, 238, 0);
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+
+div > h1 > p{
+    margin: 0;
+}
+footer{
+    margin: 0;
+    background-color: white;
+    text-align: center;
+}
+#Berinjela{
+    font-size: 50px;
+    color:rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+#Casas{
+    font-size: 30px;
+}
