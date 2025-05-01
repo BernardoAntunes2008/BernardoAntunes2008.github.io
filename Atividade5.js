@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let enviar = document.getElementById("enviar");
 let procurar = document.getElementById("procurar");
 let substituir = document.getElementById("substituir");
@@ -106,7 +106,7 @@ substituir.onclick = function()
     }
     for(i=0;i<ArrayDePalavra.length;i++)resposta.innerHTML += " "+NovoArray[i]+" ";
 }
-
+*/
 
 
 
