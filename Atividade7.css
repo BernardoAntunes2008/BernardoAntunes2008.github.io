@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #fraca{
     border: solid 1px black;
     background-color: red;
@@ -12,4 +13,20 @@
     border: solid 1px black;
     background-color: green;
     color: white;
+=======
+#fraca{
+    border: solid 1px black;
+    background-color: red;
+    color: white;
+}
+#media{
+    border: solid 1px black;
+    background-color: orange;
+    color: white;
+}
+#forte{
+    border: solid 1px black;
+    background-color: green;
+    color: white;
+>>>>>>> 47368170747e792ee9a2029c77f6c93d623926a4
 }
