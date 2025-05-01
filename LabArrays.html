@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: aqua;
+            color: red;
+            text-align: center;
+        }
+        p{
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Questão 1- </h1>
+    <p>Insira um número:  <input id="qtd" type="number"></p>
+    <button id="botao1">Enviar</button>
+    <button id="decisao1">Gerar Resultado</button>
+    <p id="resposta1"></p>
+    <p>==================================================</p>
+    <h1>Questão 2-</h1>
+    <p>Insira a quantidade de primos que você deseja ou um intervalo que os limite: <input id="qtdd" type="number"></p>
+    <button id="botao2">Enviar</button>
+    <p id="resposta2"></p>
+    <p>==================================================</p>
+    <script>
+        let botaoUm = document.getElementById("botao1");
+        let botaoDois = document.getElementById("botao2");
+        let respostaUm = document.getElementById("resposta1");
+        let respostaDois = document.getElementById("resposta2");
+        let decisaoUm = document.getElementById("decisao1");
+        let ArrayDeNum = [];
+        let ArrayDePrimos = [];
+        let tam = 0;
+        let i;
+        const EhPrimo = n => {
+            let inteiro = parseInt(n);
+            let primo=false;
+            let j=0;
+            for(i=1;i<=inteiro;i++)
+            {
+                if(n%i==0)j++;
+            }
+            if(j==2)primo=true;
+            return primo;
+        }
+        botaoUm.onclick = function()
+        {
+            let qtd = document.getElementById("qtd").value;
+            ArrayDeNum[tam]=Number(qtd);
+            tam++;
+        }
+        decisaoUm.onclick = function()
+        {
+            let soma=0;
+            for(i=0;i<tam;i++)
+            {
+                soma = soma + ArrayDeNum[i];
+            }
+            respostaUm.innerHTML = `O resultado é: ${soma}`;
+            tam = 0;
+        }
+        botaoDois.onclick = function()
+        {
+                let qtdd = Number(document.getElementById("qtdd").value);
+                let qtdDePrimos = 0;
+                for(i=0;i<10000;i++)
+                {
+                    if(EhPrimo(i))
+                    {
+                        ArrayDePrimos[qtdDePrimos]=i;
+                        qtdDePrimos++;
+                    }
+                    if(qtdDePrimos==qtdd)break;
+                }
+                respostaDois.innerHTML = `Os primos são: ${ArrayDePrimos}`;    
+        }
+    </script>
+</body>
+</html>

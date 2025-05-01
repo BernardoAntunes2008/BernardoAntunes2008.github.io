@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let botao = document.getElementById("botao");
 let resposta = document.getElementById("resposta");
 
@@ -26,6 +26,8 @@ botao.onclick = function()
 {
     let texto = document.getElementById("texto").value;
     resposta.innerHTML = "A frase criptografada eh: "+ Criptografia(texto);
+}
+/*
 =======
 let botao = document.getElementById("botao");
 let resposta = document.getElementById("resposta");
@@ -55,4 +57,4 @@ botao.onclick = function()
     let texto = document.getElementById("texto").value;
     resposta.innerHTML = "A frase criptografada eh: "+ Criptografia(texto);
 >>>>>>> 47368170747e792ee9a2029c77f6c93d623926a4
-}
+} */
