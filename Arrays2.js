@@ -13,7 +13,19 @@ const produtos = [
 
 
 const buscarProduto = () => {
-    
+    const resultadoBusca = document.getElementById("resultadoBusca");
+    let busca = document.getElementById("busca").value;
+    let i;
+    let tam = produtos.length;
+    for(i=0;i<tam;i++)
+    {
+        if(produtos[i].nome==busca) 
+        {
+            resultadoBusca.innerHTML = `Nome: ${busca}. <br> Preço: ${produtos[i].preco}. <br> Quantidade: ${produtos[i].quantidade}.`;
+            return 0;
+        }
+    }
+    resultadoBusca.innerHTML = "Produto não encontrado. ";
 }
 
 const listarProdutos = () => {
@@ -65,5 +77,13 @@ const verificarEsgotados = () => {
 }
 
 const verificarPrecos = () => {
-
+    const resultado = document.getElementById("resultado");
+    let i;
+    resultado.innerHTML = "";
+    let tam=produtos.length;
+    for(i=0;i<tam;i++)
+    {
+        if(produtos[i].preco<=10)resultado.innerHTML = "Há produtos com preço muito baixo.";
+        else resultado.innerHTML = "Todos os produtos têm preço justo.";
+    }
 }

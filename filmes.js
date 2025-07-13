@@ -21,11 +21,11 @@ const produtos = [
     "opinioes": [
       {
         "rating": 5,
-        "descricao": "Estou ansioso pelos próximos episódios. Sou fã de Breaking Bad e estou confiante que essa série será um grande sucesso."
+        "descricao": "Estou ansioso pelos próximos episódios."
       },
       {
         "rating": 5,
-        "descricao": "Ansioso para ver. Vai ser demais! \"Advogados são como planos de saúde, você espera nunca precisar, mas cara... Não ter um ... NÃO!\" \\o/ "
+        "descricao": "Ansioso para ver. Vai ser demais!"
       }
     ]
   },
@@ -51,7 +51,7 @@ const produtos = [
     "opinioes": [
       {
         "rating": 5,
-        "descricao": "Ótima série! Uma das melhores dos últimos tempos. Quando a quinta temporada completa estará completa?"
+        "descricao": "Ótima série! Uma das melhores dos últimos tempos."
       },
       {
         "rating": 5,
