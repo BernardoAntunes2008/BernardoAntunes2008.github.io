@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: blue;
+            color:chartreuse;
+            text-align: center;
+        }
+        p{
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+            margin-left: 6px;
+            border: 1px solid greenyellow;
+        }
+        .capsula{
+            background-color: purple;
+            color: yellow;
+            border: 2px solid greenyellow;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            width: 1500px;
+            height: 300px;
+            margin-bottom: 50px;
+        }
+
+        #resposta{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Catálogo de Filmes</h1>
+    <div id="resposta"></div>
+    <script src="filmes.js"></script>
+    <script>
+
+        let resposta = document.getElementById("resposta");
+        //resposta.innerHTML = "";
+        let i;
+        function Genero_Filme(genero)
+        {
+            let texto="";
+            for(i=0;i<genero.length;i++)
+                {
+                    texto+=`<li>${genero[i]}</li>`;
+                }
+            return texto;
+        }
+        function Opinioes_Filme(opiniao)
+        {
+            let texto = "";
+            for(i=0;i<opiniao.length;i++)
+            {
+                texto+= `<p>Rating: ${opiniao[i].rating}</p><br>`;
+                texto+= `<p>Descricao: ${opiniao[i].descricao}</p><br>`;
+            }
+            return texto;
+        }
+        function Texto_Filme(filme)
+        {
+            let texto = `<div class="capsula"><p>Nome: ${filme.titulo}</p><br><p>Resumo: ${filme.resumo}</p><br><ul>Gêneros: ${Genero_Filme(filme.generos)}</ul><br><ul>Títulos Semelhantes: ${Genero_Filme(filme.titulosSemelhantes)}</ul><br><p>Classificação: ${filme.classificacao}</p><br><p>Figura: <img src="${filme.figura}" alt="Imagem"> </p><br><ul>Elenco: ${Genero_Filme(filme.elenco)} </ul><br><ul>Avaliações: ${Opinioes_Filme(filme.opinioes)}</ul><br></div>`;
+            return texto;
+        }
+        produtos.forEach((filme)=>{
+                    resposta.innerHTML += Texto_Filme(filme);
+                });
+                /*for(i=0;i<produtos.length;i++)
+                    {
+                        resposta.innerHTML += Texto_Filme(produtos[i]);
+                    }*/
+    </script>
+    <!--<div id="total">
+                <script>
+                produtos.forEach((filme)=>{
+                    resposta.innerHTML += Texto_Filme(filme);
+                });
+                /*for(i=0;i<produtos.length;i++)
+                    {
+                        resposta.innerHTML += Texto_Filme(produtos[i]);
+                    }*/
+        </script>
+        </div>-->
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: brown;
+            color: yellow;
+            font-size: 70px;
+            text-align: center;
+        }
+        h1{
+            font-size: 75px;
+        }
+        img{
+            width: 400px;
+        }
+        #D{
+            display: flex;
+            flex-direction: row;
+        }
+        #A,#B,#C{
+            width: 33.333%
+        }
+        #i1,#i2,#i3{
+            width:30px;
+            height: 30px;
+        }
+        #i1{background-color: blue;}
+        #i2{background-color: green;}
+        #i3{background-color: palevioletred;}
+        #botao{
+            margin-top: 150px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="D">
+        <div id="A">
+            <h1>Loja De Itens</h1>
+            <ul>
+                <li>Água(1 real): <button id="i1"></button></li>
+                <li>Banana(2 reais): <button id="i2"></button></li>
+                <li>Peixe(4 reais): <button id="i3"></button></li>
+            </ul>
+        </div>
+        <div id="B">
+            <p><button id="botao"><img src="Imagens/CoisaAzul.png" alt="Azul"></button></p>
+            <p id="resposta"></p>
+        </div>
+        <div id="C">
+            <p></p>
+        </div>
+    </div>
+    <script>
+        //Parte do código que atualiza a quantidade de S;
+        const botao = document.getElementById("botao");
+        const resposta = document.getElementById("resposta");
+        let s = 0;
+        resposta.innerHTML = "Reais : " + s ;
+        botao.onclick = function()
+        {
+            s++;
+            resposta.innerHTML = "Reais : " + s ;
+        }
+
+        //Parte dos itens que gastam S;
+        const i1 = document.getElementById("i1");
+        const i2 = document.getElementById("i2");
+        const i3 = document.getElementById("i3");
+        i1.onclick = function() { 
+            if(s>=1)s-=1; 
+            resposta.innerHTML = "Reais : " + s ;
+        };
+        i2.onclick = function() { 
+            if(s>=2)s-=2; 
+            resposta.innerHTML = "Reais : " + s ;
+        };
+        i3.onclick = function() { 
+            if(s>=4)s-=4;
+            resposta.innerHTML = "Reais : " + s ;
+        };
+
+        //Parte das melhorias:
+
+        
+    </script>
+</body>
+</html>
