@@ -1,0 +1,29 @@
+body{
+    background-color: burlywood;
+    color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titulo{
+    text-align: center;
+    border: 3px solid blueviolet;
+    width:max-content;
+}
+#catalogo{
+    display: flex;
+    flex-direction: row;
+}
+.produto_padrao{
+    border: 3px solid blueviolet;
+    margin-right: 30px;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.imagem_padrao{
+    width: 70px;
+    height: 70px;
+}
